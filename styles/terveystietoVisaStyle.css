@@ -13,6 +13,7 @@ body {
 h1, h2, h3 {
     color: #ffffff;
     font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Kysymys elementin tyyli */
@@ -24,21 +25,34 @@ h1, h2, h3 {
 .question, .correct, .incorrect {
     color: #ffffff;
     font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: rgba(12, 98, 155, 0.8); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px;  
+    display: inline-block;
 }
 
 /* Valkoinen tausta vastauksille "Submit Answers" painikkeen jälkeen */
 .correct, .incorrect {
-    background-color: #053D62;
-    padding: 5px; 
+    padding: 10px;
+    background-color: rgba(12, 98, 155, 0.8); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
 }
+
 
 /* Värit oikeille ja vääriin vastauksille */
 .correct {
-    color: green;
+    color: rgb(29, 182, 57);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .incorrect {
     color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Nappuloiden tyyli */
