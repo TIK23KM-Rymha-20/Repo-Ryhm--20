@@ -1,0 +1,80 @@
+/* Yleiset tyylit */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../Images/taustakuvaTerveystieto.jpg'); /* Lisää taustakuva */
+    background-size: cover; /* Asettaa taustakuvan koko sopimaan sivun kokoon */
+    background-repeat: no-repeat; /* Estää taustakuvan toistumisen */
+    background-attachment: fixed; /* Pitää taustakuvan paikallaan vierityksen aikana */
+    background-position: center; /* Asettaa taustakuvan keskelle */
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+/* Kysymys elementin tyyli */
+.question {
+    margin-bottom: 30px;
+}
+
+/* Kysymysten vastausten tekstin väri */
+.question, .correct, .incorrect {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+/* Valkoinen tausta vastauksille "Submit Answers" painikkeen jälkeen */
+.correct, .incorrect {
+    background-color: #053D62;
+    padding: 5px; 
+}
+
+/* Värit oikeille ja vääriin vastauksille */
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+/* Nappuloiden tyyli */
+button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+/* Nappuloiden hover-tyyli */
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Tulosten näyttämisen tyyli */
+.results {
+    display: none;
+}
+
+
+/* fadeIn animaatio */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* fadeIn animaation käyttö */
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}

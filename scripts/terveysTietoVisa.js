@@ -24,7 +24,7 @@ const explanations = [
 function submitQuiz() {
     // Haetaan käyttäjän vastaukset
     const userAnswers = correctAnswers.map((_, index) => {
-         // Haetaan kaikki radiopainikkeet, jotka kuuluvat tähän kysymykseen
+        // Haetaan kaikki radiopainikkeet, jotka kuuluvat tähän kysymykseen
         const radioButtons = quiz.elements[`question-${index}`];
         let answer = null;
         // Käydään läpi kaikki radiopainikkeet ja otetaan valittu vastaus
@@ -47,15 +47,21 @@ function submitQuiz() {
         // Palautetaan selitys ja sen tila (oikein/väärin) HTML-muodossa
         return `
             <div>
-            <h3>${questionText}</h3>
-                <p>${isCorrect ? 'Oikein!' : 'Väärin'}<br>
+                <h3>${questionText}</h3>
+                <p class="${isCorrect ? 'correct' : 'incorrect'}">${isCorrect ? 'Oikein!' : 'Väärin'}<br>
                 Selitys: ${explanations[index]}</p>
             </div>
         `;
     }).join('');
-
-    console.log('Selitykset:', explanationHtml);
     
+
     // Asetetaan selitykset HTML-muodossa "results"-elementtiin
     results.innerHTML = explanationHtml;
+    showResults();
+}
+
+
+function showResults() {
+    results.classList.add("fadeIn");
+    results.style.display = "block";
 }
