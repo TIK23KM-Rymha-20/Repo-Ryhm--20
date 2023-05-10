@@ -3,7 +3,7 @@
 /* Yleiset tyylit */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('../Images/taustakuvaTerveystieto.jpg'); /* Lisää taustakuva */ /* www.pixabay.com */
+    background-image: url('../Images/taustakuvaTerveystieto.jpg'); /* Lisää taustakuva */ /* https://pixabay.com/illustrations/dna-helix-string-biology-3d-1811955/ username: qimono*/
     background-size: cover; /* Asettaa taustakuvan koko sopimaan sivun kokoon */
     background-repeat: no-repeat; /* Estää taustakuvan toistumisen */
     background-attachment: fixed; /* Pitää taustakuvan paikallaan vierityksen aikana */
