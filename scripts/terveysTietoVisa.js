@@ -1,3 +1,5 @@
+// Ville Törölä
+
 // Haetaan viittaukset DOM-elementteihin, joita tarvitaan koodissa
 const quiz = document.getElementById('quiz');
 const results = document.getElementById('results');
