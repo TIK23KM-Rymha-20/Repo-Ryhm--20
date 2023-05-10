@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#historyAnswers {
+    display: none;
+    opacity: 0.6;
+}
