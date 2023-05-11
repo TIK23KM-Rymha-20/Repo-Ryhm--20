@@ -5,68 +5,40 @@ let radio2 = document.getElementsByName('q2');
 let radio3 = document.getElementsByName('q3');
 let radio4 = document.getElementsByName('q4');
 let radio5 = document.getElementsByName('q5');
-let message = document.getElementById("message");
 
 
 function testaus() {
     
-
-   // for(i = 0; i < radio1.length; i++) {
-    message = "";
-   if(radio1.value === 1) {
-        document.getElementById("q1");
-        message = "correct";
-        
-        }
-        
-        
-        points++;
-        alert(radio1);
-   // }
-}
-
-/*
-function radiovalue1() {
-    let radio1 = document.getElementsByName('q1');
-    for(i = 0; i < radio1.length; i++) {
-        if(radio1.value === 1)
-        document.getElementById("result1").innerHTML = "Correct";
-        points++;
-        
-    }
+   if(radio1[1].checked) {
+    document.getElementById("message").innerHTML = "correct";
+    points++;
     
-}
-
-function radiovalue2() {
-    let radio2 = document.getElementsByName('q2');
-    for(i = 0; i < radio2.length; i++) {
-        if(radio2[i].value ===1)
-        points++;
         
-    }
-}
 
-function radiovalue3() {
-    let radio3 = document.getElementsByName('q3');
-    for(i = 0; i < radio3.length; i++) {
-        if(radio3[i].value === 1)
-        points++;
-    }
-}
+        }  
+        if(radio2[0].checked) {
+            points++;
+         }
 
-function radiovalue4() {
-    let radio4 = document.getElementsByName('q4');
-    for(i = 0; i < radio4.length; i++) {
-        if(radio4[i].value === 0)
-        points++;
-    }
-}
-
-function radiovalue5() {
-    let radio5 = document.getElementsByName('q5');
-    for(i = 0; i < radio5.length; i++) {
-        if(radio5[i].value === 2)
-        points++
-    }
-}
-*/
+         if(radio3[1].checked) {
+            points++;
+         }
+            if(radio4[0].checked) {
+                points++;
+            } 
+                if(radio5[2].checked) {
+                    points++;
+                } 
+                
+                if(points === 5) {
+                    document.getElementById("message").innerHTML = "<h2>Perfect!</h2>";
+                    document.getElementById("total").innerHTML = "<h2>Your total points:"+" "+points+"/"+"5</h2>";
+                    
+                }
+                else {
+                    document.getElementById("total").innerHTML = "<h2>Your total points:"+" "+points+"/"+"5</h2>";
+                    document.getElementById("message").innerHTML = "<h2>Almost! Here are the right answers:</h2>"
+                    +"Q1 = 8"+"<br>"+"Q2 = Ice"+"<br>"+"Q3 = In a while crocodile"+"<br>"+"Q4 = Butterflies"+"<br>"+"Q5 = Honey";
+                }
+        }   
+       
