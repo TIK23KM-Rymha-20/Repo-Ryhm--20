@@ -1,6 +1,6 @@
 // Ville Törölä
 
-// Haetaan viittaukset DOM-elementteihin, joita tarvitaan koodissa
+// Haetaan viittaukset DOM elementteihin, joita tarvitaan koodissa
 const quiz = document.getElementById('quiz');
 const results = document.getElementById('results');
 
@@ -22,7 +22,10 @@ const explanations = [
     'Suurin luu ihmiskehossa on reisiluu. Se on vahva ja paksu luu, joka kestää suuria kuormituksia ja kantaa suurimman osan ihmisen painosta kävellessä ja juostessa.'
 ];
 
-// Tämä funktio suoritetaan, kun käyttäjä klikkaa "Lähetä vastaukset" painiketta
+// Alustetaan pistemäärä
+let score = 0;
+
+// Tämä funktio suoritetaan, kun käyttäjä klikkaa Lähetä vastaukset painiketta
 function submitQuiz() {
     // Haetaan käyttäjän vastaukset
     const userAnswers = correctAnswers.map((_, index) => {
@@ -39,14 +42,18 @@ function submitQuiz() {
         return answer;
     });
 
-    // Luodaan selitykset HTML-muodossa käyttäjän vastausten perusteella
+    // Luodaan selitykset HTML muodossa käyttäjän vastausten perusteella
     const explanationHtml = correctAnswers.map((correctAnswer, index) => {
         // Tarkistetaan, onko käyttäjän vastaus oikein
         const isCorrect = userAnswers[index] === correctAnswer;
-        // Haetaan kysymyksen teksti DOM:ista
+         // Jos vastaus on oikein, lisätään yksi piste pistemäärään
+         if (isCorrect) {
+            score += 1;
+        }
+        // Haetaan kysymyksen teksti DOM:ta
         const questionElement = quiz.getElementsByClassName('question')[index];
         const questionText = questionElement.getElementsByTagName('h2')[0].innerText;
-        // Palautetaan selitys ja sen tila (oikein/väärin) HTML-muodossa
+        // Palautetaan selitys ja sen tila oikein/väärin HTML-muodossa
         return `
             <div>
                 <h3>${questionText}</h3>
@@ -57,11 +64,10 @@ function submitQuiz() {
     }).join('');
     
 
-    // Asetetaan selitykset HTML-muodossa "results"-elementtiin
-    results.innerHTML = explanationHtml;
+    // Asetetaan selitykset HTML-muodossa results elementtiin
+    results.innerHTML = explanationHtml + `<p class="score">Yhteensä oikeita vastauksia: ${score} / ${correctAnswers.length}</p>`;
     showResults();
 }
-
 
 function showResults() {
     results.classList.add("fadeIn");
