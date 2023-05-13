@@ -38,7 +38,8 @@ function testaus() {
                 else {
                     document.getElementById("total").innerHTML = "<h2>Your total points:"+" "+points+"/"+"5</h2>";
                     document.getElementById("message").innerHTML = "<h2>Almost! Here are the right answers:</h2>"
-                    +"Q1 = 8"+"<br>"+"Q2 = Ice"+"<br>"+"Q3 = In a while crocodile"+"<br>"+"Q4 = Butterflies"+"<br>"+"Q5 = Honey";
+                    +"Q1: Montako jalkaa hämähäkeillä on? = 8"+"<br>"+"Q2: Jos vettä jäädyttää, mitä sitä tulee? = Ice"+"<br>"+"Q3: Vanha hokema = In a while crocodile"+"<br>"+"Q4: Mitä toukista tulee? = Butterflies"+"<br>"+"Q5: Mitä mehiläiset valmistavat = Honey";
                 }
+                
         }   
        
