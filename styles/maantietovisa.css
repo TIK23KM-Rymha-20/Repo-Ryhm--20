@@ -1,0 +1,46 @@
+body{
+  background-image: url(https://www.nationsonline.org/maps/Political-World-Map-3360.jpg);
+  background-position: center;
+  background-size: 150%;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #24a344;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options li {
+  margin-bottom: 10px;
+}
+
+.options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}   

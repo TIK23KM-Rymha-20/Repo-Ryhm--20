@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SG10 Ukot</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../styles/englanninstyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong&effect=fire">
+        <script src="../scripts/Englanninvisa.js"></script>
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">        
+            <a class="navbar-brand">SG-10 Ukkojen visahommat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/englanninvisa.html">Englanti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/maantietovisa.html">Maantieto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/historiaTietoVisa.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/terveystietoVisa.html">Terveystieto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Info</a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+        <div class="image">
+            <img src="../Images/englishquiz.jpg" class="rounded mx-auto d-block" alt="englishquizkuva">
+        </div>
+        <div class="container mt-5">
+            <div class="justify-content-left">
+                <div class="col text-left border p-5">
+                    <h1 class="font-effect-fire">English quiz!!</h1>
+                    <form id="questions">
+                        <div class="question">             
+                            <h2>Q1: How many legs does spiders have?</h2>
+                            <div>
+                                <input type="radio" name="q1"  value="0">6</label><br> 
+                                <input type="radio" name="q1"  value="1">8</label><br>
+                                <input type="radio" name="q1"  value="2">4</label><br>
+                                <input type="radio" name="q1"  value="3">10</label><br>
+                            </div>
+                        </div>
+                        
+                        
+
+                        <div class="question">             
+                            <h2>Q2: If you freeze water, what do you get?</h2>
+                            <div>
+                                <input type="radio" name="q2" value="0">Ice</label><br>
+                                <input type="radio" name="q2" value="1">Lava</label><br>
+                                <input type="radio" name="q2" value="2">Heat</label><br>
+                                <input type="radio" name="q2" value="3">Fire</label><br>
+                            </div>
+                        </div>
+                        
+
+                        <div class="question">             
+                            <h2>Q3: What's the response to "see you later, alligator?"</h2>
+                            <div>
+                                <input type="radio" name="q3" value="0">"in a while with style"</label><br>
+                                <input type="radio" name="q3" value="1">"In a while crocodile"</label><br>
+                                <input type="radio" name="q3" value="2">Ok, bye!</label><br>
+                                <input type="radio" name="q3" value="3">Sure, be seeing you!</label><br>
+                            </div>
+                        </div>
+
+                        <div class="question">             
+                            <h2>Q4: What do caterpillars turn into?</h2>
+                            <div>
+                                <input type="radio" name="q4"  value="0">Butterflies</label><br>
+                                <input type="radio" name="q4"  value="1">Dinosaurs</label><br>
+                                <input type="radio" name="q4"  value="2">Birds</label><br>
+                                <input type="radio" name="q4"  value="3">Flys</label><br>
+                            </div>
+                        </div>
+                        
+                        <div class="question">             
+                            <h2>Q5: What do bees make?</h2>
+                            <div>
+                                <input type="radio" name="q5"  value="0">Milk</label><br>
+                                <input type="radio" name="q5"  value="1">Eggs</label><br>
+                                <input type="radio" name="q5"  value="2">Honey</label><br>
+                                <input type="radio" name="q5"  value="3">Cars</label><br>
+                                <br>   
+                            </div>
+                            
+                        </div>
+                        
+                    </form> 
+                     <button class="btn btn-primary" id="button" onclick="testaus()" type="button">Check your score!</button><br>  
+                     <h1 class="font-effect-fire">
+                        <div id="total">Total points:</div><br>
+                        <div id="message"></div>
+                     </h1>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                </div>   
+            </div>
+        </div>
+    
+
+                        
+        
+
+                 
+        
+           
+        <footer>
+            <div class="text-center p-3 mt-5 bg-body-tertiary fixed-bottom">
+            <div class="row border-bottom"><p>English quiz sivun on tehnyt: Samuli Kaikkonen TIK23KM</p></div>
+            <div class="row pt-3">
+             
+
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
