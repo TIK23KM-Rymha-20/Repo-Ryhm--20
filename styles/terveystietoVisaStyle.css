@@ -82,6 +82,18 @@ button:hover {
     display: none;
 }
 
+/* Pistemäärän tyyli */
+.score {
+    color: #ffffff;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: rgba(12, 98, 155, 0.8); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px; 
+    display: inline-block;
+}
 
 /* fadeIn animaatio */
 @keyframes fadeIn {
