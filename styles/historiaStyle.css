@@ -7,6 +7,8 @@ body {
     background-image: url("../Images/taustakuva_historia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 p {
@@ -20,11 +22,12 @@ p {
 }
 
 #contents {
-    background-color:rgba(172, 131, 18, 0.5);
+
+    background-color:rgba(122, 94, 15, 0.6);    
 }
 
 #question {
-    background-color:rgba(122, 94, 15, 0.5);    
+    background-color:rgba(172, 131, 18, 0.4);    
 }
 
 :required {
