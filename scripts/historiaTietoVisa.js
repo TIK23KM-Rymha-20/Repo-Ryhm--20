@@ -44,8 +44,5 @@ function showAnswers() {
     //Kerrotaan saatu pistemäärä
     document.getElementById("historyResult").innerHTML = "Sait tuloksen:  " + points + " / " + answers;
 
-    } else {
-        //Annetaan ilmoitus jos ei kaikkiin kysymyksiin ole vastattu
-        alert("Vastaappa eka kaikkiin!");
     }
 }

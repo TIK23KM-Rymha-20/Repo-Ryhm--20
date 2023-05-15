@@ -22,14 +22,9 @@ p {
 }
 
 #contents {
-
     background-color:rgba(122, 94, 15, 0.6);    
 }
 
 #question {
     background-color:rgba(172, 131, 18, 0.4);    
-}
-
-:required {
-    background: red;
 }
