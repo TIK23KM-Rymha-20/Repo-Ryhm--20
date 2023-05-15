@@ -25,6 +25,10 @@ function checkAnswer(element) {
     element.nextSibling.nextSibling.style.opacity = "1.0";
     //Kasvatetaan annettujen vastausten määrää yhdellä
     answers++;
+    if(answers === 5) {
+        document.getElementById('submitbutton').disabled = false;
+        document.getElementById('submitbutton').innerHTML = "Näytäppä vastaukset!";
+    }
 }
 
 //Funktio joka näyttää pistemäärän ja loput selitteet
@@ -35,7 +39,7 @@ function showAnswers() {
         const definitions = document.querySelectorAll('[id="historyAnswers"]');
         //Käydään ne läpi ja tuodaan esille
         for(let i = 0; i < definitions.length; i++) {
-            definitions[i].style.display = "block";    
+            definitions[i].style.display = "block";
         }
     //Kerrotaan saatu pistemäärä
     document.getElementById("historyResult").innerHTML = "Sait tuloksen:  " + points + " / " + answers;
