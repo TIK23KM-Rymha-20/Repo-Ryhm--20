@@ -1,4 +1,4 @@
-
+// luodaan muuttujat
 let points = 0;
 let radio1 = document.getElementsByName('q1');
 let radio2 = document.getElementsByName('q2');
@@ -8,13 +8,12 @@ let radio5 = document.getElementsByName('q5');
 
 
 function testaus() {
-    
+    //Haetaan funktiolla if lausekkeella jokaisesta kysymyksestä oikean vastauksen value, joka antaa sitten pisteitä.
    if(radio1[1].checked) {
-    document.getElementById("message").innerHTML = "correct";
     points++;
     
         
-
+        
         }  
         if(radio2[0].checked) {
             points++;
@@ -29,17 +28,16 @@ function testaus() {
                 if(radio5[2].checked) {
                     points++;
                 } 
-                
+                // Jos kaikki vastaukset olivat oikein tulostuu tämä:
                 if(points === 5) {
                     document.getElementById("message").innerHTML = "<h2>Perfect!</h2>";
                     document.getElementById("total").innerHTML = "<h2>Your total points:"+" "+points+"/"+"5</h2>";
                     
                 }
+                // Jos jokin vastaus oli väärin tulostuu tämä sekä oikeat vastaukset:
                 else {
                     document.getElementById("total").innerHTML = "<h2>Your total points:"+" "+points+"/"+"5</h2>";
                     document.getElementById("message").innerHTML = "<h2>Almost! Here are the right answers:</h2>"
-                    +"Q1: Montako jalkaa hämähäkeillä on? = 8"+"<br>"+"Q2: Jos vettä jäädyttää, mitä sitä tulee? = Ice"+"<br>"+"Q3: Vanha hokema = In a while crocodile"+"<br>"+"Q4: Mitä toukista tulee? = Butterflies"+"<br>"+"Q5: Mitä mehiläiset valmistavat = Honey";
+                    +"Q1: Montako jalkaa hämähäkeillä on? = 8"+"<br>"+"Q2: Jos vettä jäädyttää, mitä sitä tulee? = Ice"+"<br>"+"Q3: Vanha hokema = In a while crocodile"+"<br>"+"Q4: Mitä toukista tulee? = Butterflies"+"<br>"+"Q5: Mitä mehiläiset valmistavat? = Honey";
                 }
-                
         }   
-       
